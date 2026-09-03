@@ -1,13 +1,17 @@
 import React from 'react';
-import { CheckCircle, Search, Home, Key, User, Star, Shield, ThumbsUp, ChevronRight, MessageSquare, Zap, BarChart3, Clock, DollarSign } from 'lucide-react';
+import { CheckCircle, Search, Home, Key, User, Star, Shield, ThumbsUp, ChevronRight, MessageSquare, Zap, BarChart3, Clock, DollarSign, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:items-center">
       {/* Left Text Column */}
       <div className="flex flex-col space-y-6">
-        <div className="inline-block bg-primary-dark/10 text-primary-dark px-4 py-1.5 rounded-full text-sm font-semibold w-max border border-primary-dark/20">
-          ✨ AI powered Property Management
+        <div className="relative group w-max">
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-orange-400 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+          <div className="relative inline-flex items-center bg-[#eef2f6] text-[#1a365d] px-5 py-2 rounded-full text-sm font-bold tracking-tight border border-[#cbd5e1] shadow-md hover:scale-105 transition-transform duration-300">
+            <Sparkles className="w-4 h-4 mr-2 text-orange-500 fill-orange-500 animate-pulse" />
+            With a touch of AI.
+          </div>
         </div>
         
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-800 leading-tight">
